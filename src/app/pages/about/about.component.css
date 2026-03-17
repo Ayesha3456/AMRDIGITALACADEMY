@@ -1,34 +1,58 @@
+/* Founder Avatar */
 .founder-avatar {
-  width: 120px; height: 120px;
-  background: linear-gradient(135deg, var(--bg-light), #DBEAFE);
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--bg-light), #dbeafe);
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
   color: var(--primary);
   margin: 0 auto;
   border: 3px solid var(--border);
   box-shadow: var(--shadow-md);
 }
+
+/* Values List */
 .values-list {
-  list-style: none; padding: 0; margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .values-list li {
-  display: flex; align-items: center; gap: 14px;
-  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
   color: var(--text-dark);
 }
-.values-list li:last-child { border-bottom: none; }
+
+.values-list li:last-child {
+  border-bottom: none;
+}
+
 .values-list li i {
   color: var(--teal);
   font-size: 1.1rem;
   flex-shrink: 0;
 }
+
+/* CTA Box */
 .about-cta-box {
-  background: linear-gradient(135deg, var(--bg-light), #EFF6FF);
-  border: 1px solid rgba(37,99,235,0.14);
+  background: linear-gradient(135deg, var(--bg-light), #eff6ff);
+  border: 1px solid rgba(37, 99, 235, 0.15);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
+  padding: 2rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .about-cta-box {
+    text-align: center;
+  }
 }
