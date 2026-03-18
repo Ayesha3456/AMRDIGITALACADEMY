@@ -56,3 +56,16 @@
     text-align: center;
   }
 }
+
+.about-cta-box {
+  background: linear-gradient(135deg, var(--bg-light), #eff6ff);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: 0.3s;
+}
+
+.about-cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}

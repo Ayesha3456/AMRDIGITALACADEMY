@@ -1,24 +1,30 @@
 .footer-amr {
-  padding: 50px 0;
-  background: var(--bg-light);
+  padding: 60px 0 40px;
+  background: #f8fafc;
   color: var(--text-dark);
   font-size: 0.9rem;
 }
 
+/* Titles */
 .footer-title {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .footer-subtitle {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.95rem;
   margin-bottom: 0.75rem;
 }
 
+/* Text */
 .footer-text {
-  color: var(--text-body);
+  color: #555;
+  line-height: 1.6;
 }
 
+/* Links */
 .footer-links {
   list-style: none;
   padding: 0;
@@ -26,21 +32,68 @@
 }
 
 .footer-links li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .footer-links li a {
   text-decoration: none;
   color: var(--text-dark);
-  transition: color 0.2s;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .footer-links li a:hover {
   color: var(--primary);
+  padding-left: 4px;
 }
 
+/* Divider */
 .footer-divider {
   margin: 2rem 0;
   border: 0;
   border-top: 1px solid var(--border);
+}
+
+/* CTA button */
+.footer-amr .btn {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+/* Secondary service link */
+.footer-amr .fw-600 {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer-amr .fw-600:hover {
+  text-decoration: underline;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .footer-amr {
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+}
+
+.secondary-service {
+  font-size: 0.95rem;
+}
+
+.secondary-link {
+  font-weight: 700;
+  color: var(--primary);
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.secondary-link:hover {
+  text-decoration: underline;
 }

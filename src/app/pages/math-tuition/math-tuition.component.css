@@ -60,3 +60,8 @@
   display: flex;
   align-items: center;
 }
+
+.page-hero .btn-primary-amr,
+.page-hero .btn-outline-amr {
+  min-width: 180px;
+}

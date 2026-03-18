@@ -1,4 +1,3 @@
-/* HERO */
 .hero-section {
   padding: 80px 0 40px;
   background: linear-gradient(to bottom, #f8fbff, #ffffff);
@@ -9,16 +8,11 @@
   font-weight: 700;
 }
 
-.highlight {
-  color: var(--primary);
-}
-
 .hero-desc {
   margin-top: 15px;
   color: #555;
 }
 
-/* TECH BADGES */
 .tech-badge {
   background: #fff;
   border: 1px solid var(--border);
@@ -28,7 +22,6 @@
   font-weight: 600;
 }
 
-/* HERO RIGHT */
 .hero-visual {
   position: relative;
 }
@@ -38,10 +31,6 @@
   padding: 25px;
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
-}
-
-.hero-card-main h5 {
-  margin-bottom: 15px;
 }
 
 .feature-row {
@@ -64,19 +53,13 @@
   font-size: 0.85rem;
 }
 
-/* BUTTON */
-.btn-primary-amr {
-  background: var(--primary);
-  color: #fff;
-  padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* SERVICES */
 .page-section {
   padding: 70px 0;
+}
+
+.page-section-alt {
+  padding: 70px 0;
+  background: #f9fafb;
 }
 
 .service-card {
@@ -98,7 +81,6 @@
   color: var(--primary);
 }
 
-/* WORKFLOW */
 .workflow-card {
   background: #fff;
   padding: 25px;
@@ -115,10 +97,18 @@
   opacity: 0.2;
 }
 
-/* CTA */
 .cta-section {
   padding: 70px 0;
   background: linear-gradient(135deg, var(--primary), var(--teal));
+}
+
+.btn-primary-amr {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .btn-light-amr {

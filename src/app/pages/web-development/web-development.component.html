@@ -1,3 +1,4 @@
+<!-- HERO -->
 <section class="hero-section">
   <div class="container">
     <div class="row align-items-center g-5">
@@ -7,12 +8,11 @@
         <span class="section-label">Web Development</span>
 
         <h1 class="hero-title">
-          Build a Strong Online Presence <br>
-          <span class="highlight">With Modern Websites</span>
+          Get a Website That Brings You Clients — Not Just Visitors
         </h1>
 
         <p class="hero-desc">
-          Fast, responsive, and professional websites designed to help businesses grow and build credibility online.
+          I build fast, responsive, and scalable websites and applications that help businesses grow and automate work.
         </p>
 
         <div class="d-flex flex-wrap gap-2 mt-3">
@@ -23,10 +23,15 @@
 
         <div class="mt-4">
           <a routerLink="/contact" class="btn-primary-amr">
-            📞 Book Free Consultation
+            🚀 Get Free Website Plan
           </a>
+
           <p class="small text-muted mt-2">
-            Free discussion · No commitment
+            Starting from ₹5,000 · No commitment
+          </p>
+
+          <p class="text-danger small">
+            Limited slots available this month
           </p>
         </div>
       </div>
@@ -59,7 +64,7 @@
 <!-- SERVICES -->
 <section class="page-section">
   <div class="container text-center">
-    <h2 class="section-title">Services</h2>
+    <h2 class="section-title">What I Offer</h2>
 
     <div class="row mt-5 g-4">
       <div class="col-md-6 col-lg-3" *ngFor="let s of services">
@@ -73,10 +78,35 @@
   </div>
 </section>
 
-<!-- WORKFLOW -->
+<!-- PROJECTS -->
+<section class="page-section-alt">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6" *ngFor="let p of projects">
+        <div class="amr-card">
+          <h5>{{ p.title }}</h5>
+          <p class="small text-muted">{{ p.desc }}</p>
+
+          <ul class="small">
+            <li *ngFor="let point of p.points">{{ point }}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
 <section class="page-section bg-light">
   <div class="container text-center">
-    <h2 class="section-title">Process</h2>
+    <h2 class="section-title">How It Works</h2>
 
     <div class="row mt-5 g-4">
       <div class="col-md-6 col-lg-3" *ngFor="let step of workflow">
@@ -97,7 +127,7 @@
     <p class="mt-2">Let’s build something clean, fast, and effective.</p>
 
     <a routerLink="/contact" class="btn-light-amr mt-3">
-      Get Started
+      Start Now
     </a>
   </div>
 </section>

@@ -1,86 +1,59 @@
 <nav class="navbar navbar-expand-lg fixed-top" [class.scrolled]="isScrolled">
   <div class="container">
-
     <!-- Brand -->
     <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" routerLink="/">
       <img src="assets/logo.jpg" alt="AMR Digital Academy" class="brand-icon" />
       <div>
-        <span class="brand-name">AMR Digital</span>
-        <span class="brand-sub d-block">Academy | Math Tutor, CBSE Maths</span>
+        <span class="brand-name">AMR Academy</span>
+        <span class="brand-sub d-block">CBSE Math Tuition (Classes 1–10)</span>
       </div>
     </a>
 
     <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
       <span class="toggler-icon">☰</span>
     </button>
 
     <!-- Nav Links -->
-    <div class="collapse navbar-collapse justify-content-between" id="mainNav">
-      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+    <div class="collapse navbar-collapse" [class.show]="isMenuOpen" id="mainNav">
+      <ul class="navbar-nav mx-auto text-center">
         <li class="nav-item">
-          <a class="nav-link"
-             routerLink="/"
-             routerLinkActive="active"
-             [routerLinkActiveOptions]="{exact:true}"
-             data-bs-toggle="collapse"
-             data-bs-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()">
             Home
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"
-             routerLink="/math-tuition"
-             routerLinkActive="active"
-             data-bs-toggle="collapse"
-             data-bs-target=".navbar-collapse.show">
-            Math Tuition (1–10)
+          <a class="nav-link" routerLink="/math-tuition" routerLinkActive="active" (click)="closeMenu()">
+            Math Tuition
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"
-             routerLink="/web-development"
-             routerLinkActive="active"
-             data-bs-toggle="collapse"
-             data-bs-target=".navbar-collapse.show">
-            Web Dev Services
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link"
-             routerLink="/about"
-             routerLinkActive="active"
-             data-bs-toggle="collapse"
-             data-bs-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="closeMenu()">
             About
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"
-             routerLink="/contact"
-             routerLinkActive="active"
-             data-bs-toggle="collapse"
-             data-bs-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">
             Contact
           </a>
         </li>
       </ul>
 
-      <!-- CTA for Desktop -->
-      <div class="navbar-actions d-flex align-items-center ms-3">
+      <!-- CTA -->
+      <div class="text-center mt-3 mt-lg-0">
         <a class="btn btn-warning nav-cta" href="https://wa.me/8500764713" target="_blank">
-          📱 WhatsApp Demo
+          📱 Book Demo
         </a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- Floating WhatsApp Button -->
+<!-- Floating WhatsApp (ICON ONLY) -->
 <a href="https://wa.me/8500764713" class="whatsapp-float" target="_blank">
-  📱 Chat on WhatsApp
+  <i class="bi bi-whatsapp"></i>
 </a>

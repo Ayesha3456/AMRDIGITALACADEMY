@@ -1,216 +1,123 @@
-/* Hero */
+/* HERO FIXED */
 .hero-section {
-  padding: 60px 0 80px;
-  background: linear-gradient(135deg, #F0F7FF 0%, #EFF6FF 60%, #F0FDFA 100%);
-  overflow: hidden;
+  padding: 20px 0 60px;
 }
 
+/* TYPOGRAPHY */
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-family: var(--font-head);
-  color: var(--text-dark);
-  line-height: 1.18;
-  margin-bottom: 1rem;
-}
-
-.hero-highlight {
-  background: linear-gradient(135deg, var(--primary), var(--teal));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
 }
 
 .hero-desc {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 500px;
-  line-height: 1.75;
+  font-size: 1rem;
+  color: var(--text-body);
 }
 
-.hero-stats { gap: 16px; }
-
+/* STATS */
 .hero-stat {
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 90px;
-  box-shadow: var(--shadow-sm);
+  border-radius: 10px;
+  padding: 10px 16px;
 }
 
 .stat-number {
-  font-family: var(--font-head);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--primary);
-  line-height: 1;
 }
 
 .stat-label {
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  text-align: center;
-  margin-top: 4px;
 }
 
-/* Hero Visual */
+/* HERO CARDS */
 .hero-visual {
-  position: relative;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .hero-card {
   background: #fff;
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: 12px;
 }
 
-.hero-card-main { position: relative; z-index: 2; }
-
-.hero-card-side {
-  position: absolute;
-  bottom: 0;
-  right: -10px;
-  width: 200px;
-  z-index: 3;
-  padding: 16px 18px;
+.hero-card-side div {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
 }
 
-.side-card-row {
-  font-size: 0.84rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.session-bar {
-  background: var(--bg-light);
-  border-radius: 8px;
-  padding: 8px 14px;
-}
-
-.session-topic {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.hero-decoration {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.12;
-}
-
-.dec-1 {
-  width: 160px; height: 160px;
-  background: var(--primary);
-  top: -20px; right: -20px;
-}
-
-.dec-2 {
-  width: 80px; height: 80px;
-  background: var(--teal);
-  bottom: 30px; left: 0;
-}
-
-/* Classes ribbon */
-.classes-ribbon {
-  background: var(--text-dark);
-  padding: 16px 0;
-}
-
-.ribbon-label {
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: #94a3b8;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-right: 8px;
-}
-
-.class-chip {
-  display: inline-block;
-  background: rgba(255,255,255,0.08);
-  color: #cbd5e1;
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 50px;
-  padding: 5px 14px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.class-chip:hover {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
-}
-
-/* Steps */
-.step-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2rem 1.5rem;
-  height: 100%;
-  transition: all 0.25s;
-  position: relative;
-}
-
-.step-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(37,99,235,0.2);
-}
-
-.step-number {
-  font-family: var(--font-head);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary);
-  opacity: 0.18;
-  line-height: 1;
-}
-
-/* Web dev banner */
-.web-dev-banner {
-  background: linear-gradient(135deg, #F0FDFA, #E6F7F5);
-  border: 1px solid rgba(13,148,136,0.18);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem;
-}
-
-@media (max-width: 768px) {
-  .hero-card-side { display: none; }
-  .hero-visual { padding: 0; }
-}
-
+/* CLASS SCROLL */
 .class-segment {
-  display: flex;
-  flex-wrap: nowrap;       /* Keep all cards in a single line */
-  overflow-x: auto;        /* Scroll if viewport is too small */
-  padding: 1rem 0;
-}
-
-.class-segment::-webkit-scrollbar {
-  height: 6px;
-}
-
-.class-segment::-webkit-scrollbar-thumb {
-  background: rgba(37,99,235,0.3);
-  border-radius: 10px;
+  overflow-x: auto;
 }
 
 .class-segment .card {
-  min-width: 220px;        /* Ensure reasonable card width */
+  min-width: 200px;
+}
+
+/* STEP */
+.step-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.step-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  opacity: 0.2;
+}
+
+/* ===== CLASS SECTION ===== */
+.class-section {
+  padding: 40px 0 60px; /* proper vertical spacing */
+}
+
+/* ===== CARD STYLE ===== */
+.class-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 15px;
+  transition: all 0.25s ease;
+  height: 100%;
+}
+
+/* TITLE */
+.class-card h5 {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* DESCRIPTION */
+.class-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* HOVER EFFECT */
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* MOBILE IMPROVEMENT */
+@media (max-width: 576px) {
+  .class-section {
+    padding: 30px 0 50px;
+  }
+
+  .class-card {
+    padding: 18px 12px;
+  }
 }

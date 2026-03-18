@@ -3,9 +3,21 @@
     <span class="section-label">Get in Touch</span>
     <h1 class="section-title mt-1">Book a Free Demo Class</h1>
     <div class="amr-divider mx-auto"></div>
+
     <p class="section-subtitle mx-auto mt-2">
-      Fill the form below to book a demo class. Limited seats per batch.
+      Limited seats per batch. Contact now to reserve your slot.
     </p>
+
+    <!-- MAIN CTA -->
+    <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+      <a href="https://wa.me/918500764713" class="btn-teal-amr">
+        💬 WhatsApp Now
+      </a>
+
+      <a [href]="formUrl" target="_blank" class="btn-primary-amr">
+        📄 Fill Enquiry Form
+      </a>
+    </div>
   </div>
 </section>
 
@@ -14,9 +26,11 @@
     <div class="row justify-content-center g-5">
 
       <!-- INFO -->
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg-6">
         <div class="contact-info-box">
+
           <h5 class="fw-bold mb-4">Why Book a Demo?</h5>
+
           <div class="contact-point">✅ Free demo class</div>
           <div class="contact-point">🎥 Live interactive session</div>
           <div class="contact-point">👁️ Understand teaching method</div>
@@ -25,6 +39,7 @@
           <hr class="my-4">
 
           <h6 class="fw-bold mb-3">Class Details</h6>
+
           <div class="class-info-box">
             <div class="class-info-row">
               <span>Classes</span><strong>1–10 (CBSE)</strong>
@@ -39,16 +54,39 @@
               <span>Duration</span><strong>60 mins</strong>
             </div>
           </div>
+
+          <hr class="my-4">
+
+          <p class="small text-muted">
+            🕒 Flexible timings available based on student convenience.
+          </p>
+
         </div>
       </div>
 
-      <!-- EMBED GOOGLE FORM -->
-      <div class="col-12 col-lg-8">
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeIq6x55dhqtdL-mwfAaWD_CcOYYlfMpx8ik0DEU6TGUZU_SA/viewform?embedded=true"
-          width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">
-          Loading…
-        </iframe>
+      <!-- ACTION BOX -->
+      <div class="col-12 col-lg-6">
+        <div class="contact-form-wrapper text-center p-5">
+
+          <h4 class="fw-bold mb-3">Ready to Get Started?</h4>
+
+          <p class="text-muted mb-4">
+            Choose your preferred way to contact and book your demo class.
+          </p>
+
+          <div class="d-flex flex-column gap-3">
+
+            <a href="https://wa.me/918500764713" class="btn-teal-amr">
+              💬 Chat on WhatsApp
+            </a>
+
+            <a [href]="formUrl" target="_blank" class="btn-outline-amr">
+              📄 Fill Enquiry Form
+            </a>
+
+          </div>
+
+        </div>
       </div>
 
     </div>

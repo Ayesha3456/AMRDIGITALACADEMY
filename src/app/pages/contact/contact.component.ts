@@ -9,6 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  // Optional: Backup link
   formUrl = 'https://forms.gle/gBgYmbwZRfvia9Y96';
 }

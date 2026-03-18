@@ -23,17 +23,12 @@
 
 .brand-name {
   font-weight: 800;
-  font-size: 1rem;
-  color: var(--text-dark);
-  line-height: 1;
+  font-size: 1.1rem;
 }
 
 .brand-sub {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
 }
 
 /* Nav links */
@@ -135,11 +130,23 @@
   transition: all 0.2s;
 }
 
-.whatsapp-float i {
-  font-size: 1rem;
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  z-index: 1000;
 }
 
 .whatsapp-float:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transform: scale(1.1);
 }

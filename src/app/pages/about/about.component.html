@@ -1,92 +1,106 @@
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="page-hero">
   <div class="container text-center">
     <span class="section-label">About</span>
-    <h1 class="section-title mt-1">About AMR Digital Academy</h1>
+
+    <h1 class="section-title mt-1">
+      Helping Students Actually Understand Mathematics
+    </h1>
+
+    <p class="text-muted mt-3 mx-auto" style="max-width: 600px;">
+      AMR Digital Academy focuses on building strong fundamentals, improving confidence, and delivering real academic improvement for students from Classes 1 to 10.
+    </p>
+
     <div class="amr-divider mx-auto"></div>
   </div>
 </section>
 
-<!-- ===== FOUNDER ===== -->
+<!-- FOUNDER -->
 <section class="page-section">
   <div class="container">
     <div class="row align-items-center g-5">
 
       <!-- LEFT -->
-      <div class="col-12 col-md-4 text-center">
+      <div class="col-md-4 text-center">
         <div class="founder-avatar">
           <i class="bi bi-person-fill"></i>
         </div>
 
         <h4 class="fw-700 mt-3 mb-1">Ayesha M</h4>
-        <p class="text-muted small">MSc Applied Mathematics · Math Tutor</p>
+        <p class="text-muted small">MSc Applied Mathematics</p>
 
-        <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
-          <span class="badge-amr">Classes 1–10</span>
-          <span class="badge-amr badge-teal">Small Batches</span>
+        <div class="mt-2">
+          <span class="badge-amr">5–6 Students / Batch</span>
         </div>
       </div>
 
       <!-- RIGHT -->
-      <div class="col-12 col-md-8">
-        <span class="section-label">Founder’s Note</span>
-        <h2 class="section-title mt-1">Focused Teaching. Real Results.</h2>
+      <div class="col-md-8">
+        <h2 class="section-title">Why This Academy Exists</h2>
         <div class="amr-divider"></div>
 
         <p class="text-muted">
-          I started AMR Digital Academy with a simple goal — to make math easier and more understandable for students from Classes 1 to 10.
+          Most students struggle in mathematics not because it is difficult, but because they never fully understand the basics.
         </p>
 
         <p class="text-muted">
-          With a postgraduate degree in Applied Mathematics, I focus on building strong concepts instead of rote learning. Every class is designed to help students actually understand what they are learning.
+          AMR Digital Academy was created to fix that problem — by focusing on clarity, practice, and consistent guidance instead of memorisation.
         </p>
 
         <p class="text-muted">
-          Classes are conducted in small batches (5–6 students) so that every child gets personal attention, can ask questions freely, and improve with confidence.
+          Every student is taught in a small batch so they can ask questions freely, build confidence, and improve step by step.
         </p>
 
-        <p class="text-muted mb-0">
-          I also work on web development projects for businesses, but my primary focus is helping students improve in mathematics through structured teaching.
+        <p class="fw-600">
+          The goal is simple: better understanding → better marks → more confidence.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== HIGHLIGHTS ===== -->
+<!-- RESULTS (NEW - IMPORTANT) -->
 <section class="page-section-alt">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="section-label">Qualifications</span>
-      <h2 class="section-title">Background & Expertise</h2>
-    </div>
+  <div class="container text-center">
 
-    <div class="row g-4">
-      <div *ngFor="let h of highlights" class="col-12 col-sm-6">
-        <div class="amr-card">
-          <div class="d-flex gap-4">
-            <div class="amr-card-icon" [ngClass]="h.iconClass">
-              <i class="bi" [ngClass]="h.icon"></i>
-            </div>
-            <div>
-              <h5 class="fw-700 mb-2">{{ h.title }}</h5>
-              <p class="text-muted mb-0 small">{{ h.desc }}</p>
-            </div>
-          </div>
+    <span class="section-label">Results</span>
+    <h2 class="section-title">What Students Achieve</h2>
+
+    <div class="row mt-5 g-4">
+
+      <div class="col-md-4">
+        <div class="amr-card text-center">
+          <h3 class="fw-700">↑ Marks</h3>
+          <p class="small text-muted">Improvement in school exam scores</p>
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="amr-card text-center">
+          <h3 class="fw-700">Strong Basics</h3>
+          <p class="small text-muted">Clear understanding of core concepts</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="amr-card text-center">
+          <h3 class="fw-700">Confidence</h3>
+          <p class="small text-muted">Students participate and solve independently</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ===== VALUES ===== -->
+<!-- VALUES -->
 <section class="page-section">
   <div class="container">
     <div class="row align-items-center g-5">
 
-      <div class="col-12 col-md-6">
-        <span class="section-label">Values</span>
-        <h2 class="section-title mt-1">Teaching Approach</h2>
+      <div class="col-md-6">
+        <span class="section-label">Approach</span>
+        <h2 class="section-title">How Teaching Works</h2>
         <div class="amr-divider"></div>
 
         <ul class="values-list">
@@ -97,16 +111,16 @@
         </ul>
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="col-md-6">
         <div class="about-cta-box">
-          <h4 class="fw-700 mb-3">Want to know more?</h4>
+          <h4 class="fw-700 mb-3">Try Before You Decide</h4>
 
           <p class="text-muted mb-4">
-            Book a free demo class and understand the teaching approach before enrolling.
+            Book a free demo class and see the teaching method before enrolling.
           </p>
 
-          <a routerLink="/contact" class="btn-primary-amr d-inline-flex">
-            <i class="bi bi-calendar-check"></i> Book Free Demo
+          <a routerLink="/contact" class="btn-primary-amr">
+            Book Free Demo
           </a>
         </div>
       </div>
