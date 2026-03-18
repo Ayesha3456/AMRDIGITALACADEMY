@@ -21,7 +21,7 @@ export class AboutComponent {
     {
       icon: 'bi-calculator-fill',
       iconClass: 'icon-indigo',
-      title: 'Math Tutor (Classes 1–12)',
+      title: 'Math Tutor (Classes 1–10)',
       desc: 'Focused on concept clarity and improvement'
     },
     {

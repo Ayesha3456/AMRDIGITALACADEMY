@@ -194,3 +194,23 @@
   .hero-card-side { display: none; }
   .hero-visual { padding: 0; }
 }
+
+.class-segment {
+  display: flex;
+  flex-wrap: nowrap;       /* Keep all cards in a single line */
+  overflow-x: auto;        /* Scroll if viewport is too small */
+  padding: 1rem 0;
+}
+
+.class-segment::-webkit-scrollbar {
+  height: 6px;
+}
+
+.class-segment::-webkit-scrollbar-thumb {
+  background: rgba(37,99,235,0.3);
+  border-radius: 10px;
+}
+
+.class-segment .card {
+  min-width: 220px;        /* Ensure reasonable card width */
+}

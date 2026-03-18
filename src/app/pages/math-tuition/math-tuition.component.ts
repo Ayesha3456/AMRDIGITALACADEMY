@@ -12,14 +12,16 @@ import { RouterLink } from '@angular/router';
 export class MathTuitionComponent {
 
   classes = [
-    { num: '1', topics: ['Numbers 1–100', 'Basic Addition', 'Basic Subtraction', 'Shapes', 'Patterns'] },
-    { num: '2', topics: ['Numbers up to 1000', 'Addition & Subtraction', 'Multiplication Intro', 'Measurement', 'Data Handling'] },
-    { num: '3', topics: ['4-digit Numbers', 'Multiplication', 'Division', 'Fractions Intro', 'Time & Calendar'] },
-    { num: '4', topics: ['Large Numbers', 'Factors & Multiples', 'Fractions', 'Decimals Intro', 'Geometry Basics'] },
-    { num: '5', topics: ['Fractions & Decimals', 'Percentages Intro', 'Area & Perimeter', 'Data Handling', 'Mental Math'] },
-    { num: '6', topics: ['Integers', 'Fractions & Decimals', 'Ratios', 'Basic Algebra', 'Geometry'] },
-    { num: '7', topics: ['Rational Numbers', 'Algebraic Expressions', 'Lines & Angles', 'Triangles', 'Word Problems'] },
-    { num: '8', topics: ['Linear Equations', 'Quadrilaterals', 'Data Handling', 'Exponents', 'Mensuration'] }
+    { num: '1', topics: ['Numbers 1–100', 'Basic Addition', 'Basic Subtraction', 'Shapes', 'Patterns'], fee: '₹1000' },
+    { num: '2', topics: ['Numbers up to 1000', 'Addition & Subtraction', 'Multiplication Intro', 'Measurement', 'Data Handling'], fee: '₹1000' },
+    { num: '3', topics: ['3–4 digit Numbers', 'Multiplication', 'Division', 'Fractions Intro', 'Time & Calendar'], fee: '₹1000' },
+    { num: '4', topics: ['Large Numbers', 'Factors & Multiples', 'Fractions', 'Decimals Intro', 'Geometry Basics'], fee: '₹1500' },
+    { num: '5', topics: ['Fractions & Decimals', 'Percentages Intro', 'Area & Perimeter', 'Data Handling', 'Mental Math'], fee: '₹1500' },
+    { num: '6', topics: ['Integers', 'Fractions & Decimals', 'Ratios', 'Basic Algebra', 'Geometry'], fee: '₹2000' },
+    { num: '7', topics: ['Rational Numbers', 'Algebraic Expressions', 'Lines & Angles', 'Triangles', 'Word Problems'], fee: '₹2000' },
+    { num: '8', topics: ['Linear Equations', 'Quadrilaterals', 'Data Handling', 'Exponents', 'Mensuration'], fee: '₹2000' },
+    { num: '9', topics: ['Probability', 'Coordinate Geometry', 'Surface Area & Volume', 'Statistics', 'Algebra'], fee: '₹2500' },
+    { num: '10', topics: ['Advanced Algebra', 'Calculus Basics', 'Trigonometry', 'Graphs & Functions', 'Board Exam Practice'], fee: '₹2500' }
   ];
 
   topics = [
